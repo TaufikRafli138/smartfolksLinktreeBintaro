@@ -1,68 +1,53 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 
-import Linkees, { CHANNEL_TYPES } from "linkees";
+import Logo from "./component/logo";
+import CustomLinkees from "./component/linkess";
+import Footer from "./component/footer";
 
 import "./css/normalize.css";
+import "./css/style.css";
 
-const items = [
+const outlet = [
   {
-    title: "Website",
+    title: "Smartfolks Coffee Bintaro Plaza ",
     subtitle: "Look at my work!",
-    type: CHANNEL_TYPES.WEBSITE,
-    link: "https://sagnik-wtf.vercel.app", //your personal website or portfolio  link
+    type: "gofood",
+    link: "https://gofood.link/a/LubYFW5",
   },
   {
     title: "GitHub",
     subtitle: "@heysagnik | 🏡 to all my open-source projects",
-    type: CHANNEL_TYPES.GITHUB,
-    link: "https://github.com/heysagnik", //Github Profile link
+    type: "grabfood",
+    link: "https://r.grab.com/g/6-20240517_150716_1b44666b0983188d_MEXMPS-6-C6KCCXCYGGDYG6",
   },
   {
     title: "Instagram",
-    subtitle: "@heysagnik |  Shots of my life 🙂",
-    type: CHANNEL_TYPES.INSTAGRAM,
-    link: "https://instagram.com/heysagnik", //instagram profile link
+    subtitle: "@heysagnik | Shots of my life 🙂",
+    type: "shopee",
+    link: "https://instagram.com/heysagnik",
   },
   {
     title: "Twitter",
     subtitle: "@heysagnik | 😉",
-    type: CHANNEL_TYPES.TWITTER,
-    link: "https://twitter.com/heysagnik", // twitter profile link
+    type: "wa",
+    link: "https://api.whatsapp.com/send?phone=6281318709737&text=Halo%20apakah%20ini%20benar%20dengan%20smartfolks%20coffee%20cabang%20bintaro%20plaza%20%3F%20",
   },
   {
     title: "LinkedIn",
     subtitle: "Know more about my profession 👨‍💼",
-    type: CHANNEL_TYPES.LINKEDIN,
-    link: "https://www.linkedin.com/in/heysagnik/", // linkedin
-  },
-  {
-    title: "YouTube",
-    subtitle: "CODER SAGNIK | Official channel of mine",
-    type: CHANNEL_TYPES.YOUTUBE,
-    link: "https://www.youtube.com/channel/UCOUa9hvd4sJWQWQRIQctbSg", //youtube channel link
-  },
-
-  {
-    title: "Dribbble",
-    subtitle: "@virtuonic | shots of dezigns ",
-    type: CHANNEL_TYPES.DRIBBLE,
-    link: "https://dribbble.com/virtuonic", // Dribbble profile link
-  },
-  {
-    title: "Telegram",
-    subtitle: "@heysagnik | Chat with me instantly ",
-    type: CHANNEL_TYPES.TELEGRAM,
-    link: "https://telegram.me/heysagnik", //Telegram Pofile
+    type: "gmaps",
+    link: "https://www.google.com/maps/dir/-6.2467458,106.6749966/Smartfolks+Coffee+Bintaro+Plaza,+Bintaro+Plaza,+Pondok+Karya,+Pondok+Aren,+South+Tangerang+City,+Banten/@-6.276373,106.6607851,13z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x2e69fb5928113675:0x663fc8081bbdd250!2m2!1d106.7417163!2d-6.2718623!3e0?entry=ttu",
   },
 ];
 
 const rootElement = document.getElementById("root");
 if (rootElement) {
-  ReactDOM.createRoot(rootElement)?.render(
+  ReactDOM.createRoot(rootElement).render(
     <React.StrictMode>
-      <Linkees cardItems={items} name={"Sagnik."} />{" "}
-      {/* headerAvatar={'any image url'}*/}
+      <Logo />
+      <CustomLinkees items={outlet} />
+      < Footer />
     </React.StrictMode>
   );
 }
