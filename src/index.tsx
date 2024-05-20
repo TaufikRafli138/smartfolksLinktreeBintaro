@@ -37,7 +37,7 @@ const outlet = [
     title: "LinkedIn",
     subtitle: "Know more about my profession 👨‍💼",
     type: "gmaps",
-    link: "https://www.google.com/maps/dir/-6.2467458,106.6749966/Smartfolks+Coffee+Bintaro+Plaza,+Bintaro+Plaza,+Pondok+Karya,+Pondok+Aren,+South+Tangerang+City,+Banten/@-6.276373,106.6607851,13z/data=!3m1!4b1!4m10!4m9!1m1!4e1!1m5!1m1!1s0x2e69fb5928113675:0x663fc8081bbdd250!2m2!1d106.7417163!2d-6.2718623!3e0?entry=ttu",
+    link: "https://www.google.com/maps/dir/my+location/Smartfolks+Coffee+Bintaro+Plaza,+Bintaro+Plaza,+Pondok+Karya,+Pondok+Aren,+South+Tangerang+City,+Banten/@-6.3024841,106.6764988,13z/data=!4m9!4m8!1m0!1m5!1m1!1s0x2e69fb5928113675:0x663fc8081bbdd250!2m2!1d106.7417163!2d-6.2718623!3e0?entry=ttu",
   },
 ];
 
